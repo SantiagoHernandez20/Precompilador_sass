@@ -1,0 +1,49 @@
+$principal: #7066E8;
+
+$primary: $principal;
+$enable-shadows: true;
+$enable-gradients: true;
+$btn-padding-y: 0.8rem;
+$btn-padding-x: 1.5rem;
+$bton-border-radius: 1rem;
+
+
+
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+.btn-primary{
+    border-bottom: 3px solid rgba(10, 9, 9, 0.9) ;
+    
+}
+
+.custom-class{
+    display: none;
+}
+@include media-breakpoint-up(xs){
+    .custom-class {
+        display:block;
+        background: url(/img/tiburon.jpg);
+        height: 300px;
+    }
+}
+@include media-breakpoint-up(sm){
+    .custom-class {
+        display: block;
+        background: url(/img/tortuga.jpg);
+        height: 200px;
+    }
+}
+@include media-breakpoint-up(md){
+    .custom-class {
+        display: flex;
+        background:url(/img/panda.jpg);
+        height: 400px;
+    }
+}@include media-breakpoint-up(lg){
+    .custom-class {
+        display: flex;
+        background: url(/img/delfin.jpg);
+        height: 300px;
+    }
+}
